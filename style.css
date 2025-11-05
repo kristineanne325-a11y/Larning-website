@@ -1,263 +1,371 @@
-*{
-    margin: auto;
-    padding: 0;
-    box-sizing: border-box;
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
-.body{
-    width: 100%;
-    margin: 250px;
-    background-size: contain;
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
-.ANIMAL-RESCUE-CENTRE{
-    background: scroll;
-    color: aliceblue;
-    padding: 30px;
-    text-align: center;
-    border-radius: 10pt;
-    margin-bottom: 30pt;
-    box-shadow: 15px;
+header nav {
+  background: black;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
-.logo{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+nav a {
+  margin-right: 15px;
+  text-decoration: none;
+  color: #90ee90;
+}
+nav a:hover {
+  color: #7cd47c;
+}
+.hero {
+  height: 500px;
+  width: 100%;
+  background: url("./IMAGES//closeup-shot-elephants-standing-near-lake-sunset.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero p, .hero_about p, .hero_contact p {
+  font-size: 35px;
+}
+.conservation-section {
+  background: linear-gradient(135deg, #1a2f1a 0%, #2d5a2d 100%);
+  color: white;
+  padding: 60px 20px;
+  font-family: "Arial", sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.section-header h2 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  color: #90ee90;
+}
+
+.section-header p {
+  font-size: 1.1rem;
+  opacity: 0.9;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.conservation-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.conservation-card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  padding: 30px;
+  text-align: center;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.conservation-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.card-icon {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: #90ee90;
+}
+
+.conservation-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #90ee90;
+}
+
+.conservation-card p {
+  line-height: 1.6;
+  opacity: 0.9;
+}
+
+.cta-button {
+  display: inline-block;
+  background: #90ee90;
+  color: #1a2f1a;
+  padding: 12px 30px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 40px;
+  transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+  background: #7cd47c;
+  transform: scale(1.05);
+}
+.about-us {
+  background: linear-gradient(135deg, #1a2f1a 0%, #2d5a2d 100%);
+  color: white;
+  padding: 60px 20px;
+  font-family: "Arial", sans-serif;
+}
+
+.about-us .container {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about-us h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  color: #90ee90;
+}
+
+.about-us p {
+  font-size: 1.1rem;
+  opacity: 0.95;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.btn {
+  display: inline-block;
+  background: #90ee90;
+  color: #1a2f1a;
+  padding: 12px 30px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 20px;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background: #7cd47c;
+  transform: scale(1.03);
+}
+.hero_about{
+  height: 500px;
+  width: 100%;
+  background: url("./IMAGES/group-wildebeests-walking-away-grass-covered-field-rain.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero_contact{
+    height: 500px;
+  width: 100%;
+  background: url("./IMAGES/reflection-lionesses-drinking-water-from-small-pond.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+.footer {
+  background: linear-gradient(135deg, #1a2f1a 0%, #2d5a2d 100%);
+  color: white;
+  padding: 60px 0 20px;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.footer-column h3 {
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+  color: #90ee90;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.footer-column p {
+  line-height: 1.6;
+  margin-bottom: 20px;
+  opacity: 0.9;
+}
+
+.footer-links {
+  list-style: none;
+}
+
+.footer-links li {
+  margin-bottom: 12px;
+}
+
+.footer-links a {
+  color: #e0e0e0;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+}
+
+.footer-links a:hover {
+  color: #90ee90;
+  transform: translateX(5px);
+}
+
+.footer-links i {
+  margin-right: 8px;
+  font-size: 0.9rem;
+}
+
+.social-links {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.social-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+  background: #90ee90;
+  transform: translateY(-5px);
+}
+
+.newsletter-form {
+  display: flex;
+  margin-top: 15px;
+}
+
+.newsletter-form input {
+  flex: 1;
+  padding: 12px 15px;
+  border: none;
+  border-radius: 4px 0 0 4px;
+  outline: none;
+}
+
+.newsletter-form button {
+  background: #90ee90;
+  color: #1a2f1a;
+  border: none;
+  padding: 0 20px;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.newsletter-form button:hover {
+  background: #7cd47c;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer-logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #90ee90;
+  display: flex;
+  align-items: center;
+}
+
+.footer-logo i {
+  margin-right: 10px;
+}
+
+.copyright {
+  opacity: 0.8;
+  font-size: 0.9rem;
+}
+
+.footer-policies {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-policies a {
+  color: #e0e0e0;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.3s ease;
+}
+
+.footer-policies a:hover {
+  color: #90ee90;
+}
+@media (max-width: 768px) {
+  .conservation-section {
+    padding: 40px 15px;
+  }
+
+  .section-header h2 {
+    font-size: 2rem;
+  }
+
+  .conservation-grid {
+    grid-template-columns: 1fr;
     gap: 20px;
-    margin-bottom: 20px;
+  }
 }
-.logo img{
-    margin: 20px;
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    object-fit: cover;
-}
-.logo2{
-font-size: 2rem;
-color: aquamarine;
-
-}
-.nav{
-    display: flex;
-justify-content: center;
-    gap: 30px;
-    background-color: black;
-    border-radius: 5px;
-    box-shadow: inset;
-}
-.nav a{
-    text-decoration: none;
-    color: aquamarine;
-    font-weight: bold;
-    transition: all;
-}
-.nav a :hover{
-    background-color: aquamarine;
-    nav-index: initial;
-}
-.h1{
-    font-size: medium;
-    margin-bottom: 20px;
-    color: aquamarine;
-    text-align: center;
-}
-.h2{
-    font-size: medium;
-    color: beige;
-    margin: 20px;
-}
-.h3{
-    font-size: small;
-    color: azure;
-    margin: 20px;
-}
-.h4{
-    font-size: small;
-    color: aquamarine;
-    margin: 15px;
-}
-.h5{
-    font-size: 20cap;
-    color: antiquewhite;
-    font-style: italic;
-}
-.h6{
-   font-size: small; 
-   color: aquamarine;
-    font-style: italic;
-}
-.img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0cqh;
-}
-.col2{
-    margin: 0dvb;
-    box-sizing: content-box;
-    border-radius: 15px;
-    text-align: center;
-    padding: 25px;
-    flex: 100px;
-}
-.button{
-    background: linear-gradient(125de);
-    border: 0cqmin;
-    color: white;
-    padding: 15px;
-    cursor: pointer;
-    font-size: 5rem;
-    transition: all;
-    font-weight: bold;
-    margin: 5px;
-}
-.button :hover{
-    background: linear-gradient(135de);
-    box-shadow: 0ch;
-    transform: translateY(-2px);
-}
-.ANIMAL-RESCUE-CENTRE{
-    padding: 50px;
-    background: linear-gradient(135de);  
-    font-size: 0ch;  
-}
-.call-animal-control-centre{
-    margin: auto;
-    text-align: center;
-    padding: 20px;
-    border-radius: 0dvh;
-    border-left: 10px solid;
-}
-.form{
-    margin: 060%;
-    border-radius: 25px;
-    box-shadow: 40px;
-    
-}
-input[type="Name"],
-input[type="Email"],
-input[ytpe="Mesage"],
-input[type="Tel"]{
-    width: 100pt;
-    padding: 15px;
-    margin: 0cqi;
-    border: 2px solid;
-    font-size: small;
-    transition: 0s;
-}
-input[type="Name"]:focus,
-input[type="Email"]:focus,
-input[type="Message"]:focus,
-input[type="Tel"]:focus{
-    border-color: aquamarine;
-    outline: none;
-}
-section h3{
-    text-align: center;
-    margin: 30px;
-    color: aquamarine;
-}
-a[href*="facebook.com"],
-a[href*="instagram.com"],
-a[href*="youtube.com"]{
-    display: inline-block;
-    margin: 10px;
-    padding: 15px;
-}
-a[href*="facebook.com"]:hover{
-    background: scroll;
-}
-a[href*="instagram.com"]:hover{
-     background: local;
-}
-a[href*="youtube.com"]:hover{
-    background: none;
-}
-footer{
-    text-align: center;
-    padding: 30px;
-    background: scroll;
-    color: white;
-    margin-top: 40px;
-    border-radius: 8px;
-}
-@media (max-width:55px) {
-    .nav{
-        flex-direction: column;
-        gap: 30px;
-    }
-    .row{
-        flex-direction: column;
-    }
-    .col2{
-        flex: 120%;
-    }
-    h1{
-        font-size: 2rem;
-    }
-    h2{
-        font-size: 1.5rem;
-    }
-    .man1-container{
-        padding: 10px;
-    }  
-}
-@media (max-width:480px) {
-    .logo{
-        flex-direction: column;
-        text-align: center;
-    }
-    .ANIMAL-RESCUE-CENTRE{
-        padding: 20px 10px;
-    }
-    form{
-        padding: 20px;
-    }  
-}
-.text-center{
-    text-align: center;
-}
-.mt-20{
-    margin-top: 20px;
-    .mb-20{
-        margin-bottom: 20px;
-    }
-}
-.p-20{
-    padding: 20px;
-}
-.wild-life-preservation{
-    background: linear-gradient(135deg);
-    color: white;
-    padding: 40px 20px;
-    text-align: center;
-    border-radius: 10px;
-}
-.aqua-life-care{
-    background: linear-gradient(135deg);
-    color: white;
-    padding: 30px 20px;
-    text-align: 10px;
-    border-radius: 10px;
-    margin: 20px 0;
-}
-.preserve-wild-life{
-    background-color: blueviolet;
-    padding: 20px;
-    border-left: 4px solid;
-    margin: 15px 0;
-}
-.report-cases{
-    background: color(srgb red green blue);
-    padding: 15px;
-    border-radius: 8px;
-    border-left: 4px solid;
-    margin: 15px 0;
-}
-    
-
-
-
-
-
-
-    
