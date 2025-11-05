@@ -184,7 +184,7 @@ nav a:hover {
 .hero_contact{
     height: 500px;
   width: 100%;
-  background: url("./IMAGES/reflection-lionesses-drinking-water-from-small-pond.jpg");
+  background: url("../IMAGES/img4.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -193,15 +193,6 @@ nav a:hover {
   align-items: center;
   justify-content: center;
 }
-
-
-
-
-
-
-
-
-
 .footer {
   background: linear-gradient(135deg, #1a2f1a 0%, #2d5a2d 100%);
   color: white;
