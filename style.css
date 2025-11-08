@@ -1,3 +1,4 @@
+
 body {
   margin: 0;
   padding: 0;
@@ -28,9 +29,9 @@ nav a:hover {
   color: #7cd47c;
 }
 .hero {
-  height: 500px;
+  height: 450px;
   width: 100%;
-  background-image: url("../IMAGES/IMG3.jpg");
+  background: url("./IMAGEs/IMG3.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -172,7 +173,7 @@ nav a:hover {
 .hero_about{
   height: 500px;
   width: 100%;
-  background: url("../IMAGES/img1.jpg");
+  background: url("./IMAGES/img4.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -184,7 +185,7 @@ nav a:hover {
 .hero_contact{
     height: 500px;
   width: 100%;
-  background: url("../IMAGES/img4.jpg");
+  background: url("./IMAGES/img1.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -193,6 +194,15 @@ nav a:hover {
   align-items: center;
   justify-content: center;
 }
+
+
+
+
+
+
+
+
+
 .footer {
   background: linear-gradient(135deg, #1a2f1a 0%, #2d5a2d 100%);
   color: white;
